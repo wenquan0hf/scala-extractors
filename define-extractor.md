@@ -1,4 +1,5 @@
-# 定义 Extractor #
+# 定义 Extractor 
+
 在 Scala 中 Extractor 为定义了 unapply 方法的对象。unapply 的作用是匹配一个值，然后从中提取所需的部分。通常 unapply 和 apply 一起定义，但这不是必须的。例如，前面定义上篇文章中所需的 Email 对象。
 
 ```
