@@ -1,4 +1,4 @@
-- [分解 Email地址的例子](divide-email.md)
+- [分解 Email 地址的例子](divide-email.md)
 - [定义 Extractor](define-extractor.md)
 - [无参数和带一个参数的模式定义](model-definition.md)
 - [可变参数的 Extractors](variable-parameter-extractors.md)
