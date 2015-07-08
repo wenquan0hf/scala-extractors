@@ -1,9 +1,12 @@
-# 正规表达式 #
+# 正规表达式 
+
 Extractor 一个特别有用的应用是正规表达式，Scala 支持正规表达式，尤其是和 Extractor 配合使用时显得非常便利。
-## 生成正规表达式 ##
+
+## 生成正规表达式 
+
 Scala 继承了 Java 的正规表达式的语法规则。这里我们假定你了解正规表达式。Scala 的正规表达式相关的类型定义在包 scala.util.matching 中。
 
-创建一个正规表达式是使用RegEx类型，例如：
+创建一个正规表达式是使用 RegEx 类型，例如：
 
 ```
 scala> import scala.util.matching.Regex
@@ -30,12 +33,13 @@ Deciaml: scala.util.matching.Regex = (-)?(\d+)(\.\d*)?
 
 .r 为 StringOps 的方法，它把一个字符串转换为 Regex 对象。
 
-## 使用正规表达式查找字符串 ##
+## 使用正规表达式查找字符串 
+
 scala 支持下面几种正规表达式的查找方法：
 
-regex findFirstIn Str 查找第一个匹配的字符串，返回 Option 类型  
-regex findAllIn str 查找所有匹配的字符串，返回 Interator 类型  
-regex findPrefixOf str 从字符串开头检查是否匹配正规表达式，返回 Option 类型。  
+- regex findFirstIn Str 查找第一个匹配的字符串，返回 Option 类型  
+- regex findAllIn str 查找所有匹配的字符串，返回 Interator 类型  
+- regex findPrefixOf str 从字符串开头检查是否匹配正规表达式，返回 Option 类型。  
 
 例如：
 
@@ -66,7 +70,8 @@ scala> Decimal findPrefixOf input
 res6: Option[String] = None
 ```
 
-## 使用正规表达式分解数据 ##
+## 使用正规表达式分解数据 
+
 Scala 所有定义的正规表达式都定义了一个 Extractor，可以用来解析正规表达式中对应的分组，比如前面定义的Decimal定义了三个分组，可以直接用来解析一个浮点数：
 
 ```
